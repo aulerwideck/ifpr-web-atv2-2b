@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form-horizontal">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Form Name</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="firstName">Primeiro nome</label>  
+          <div class="col-md-4">
+          <input id="firstName" name="firstName" type="text" placeholder="" class="form-control input-md" required="">
+          <span class="help-block">Primeiro nome</span>  
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="sobrenome">Sobrenome</label>  
+          <div class="col-md-4">
+          <input id="sobrenome" name="sobrenome" type="text" placeholder="" class="form-control input-md" required="">
+          <span class="help-block">Sobrenome</span>  
+          </div>
+        </div>
+        
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="passwordinput">Senha</label>
+          <div class="col-md-4">
+            <input id="passwordinput" name="passwordinput" type="password" placeholder="************" class="form-control input-md" required="">
+            
+          </div>
+        </div>
+        
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="passwordinput">Password Input</label>
+          <div class="col-md-4">
+            <input id="passwordinput" name="passwordinput" type="password" placeholder="************" class="form-control input-md">
+            
+          </div>
+        </div>
+        
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="celular">Celular</label>
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-addon">+55</span>
+              <input id="celular" name="celular" class="form-control" placeholder="" type="text" required="">
+            </div>
+            <p class="help-block">Celular</p>
+          </div>
+        </div>
+        
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="telefone">Telefone</label>
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-addon">+55</span>
+              <input id="telefone" name="telefone" class="form-control" placeholder="" type="text" required="">
+            </div>
+            <p class="help-block">Telefone</p>
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="naturalidade">Naturalidade</label>  
+          <div class="col-md-4">
+          <input id="naturalidade" name="naturalidade" type="text" placeholder="" class="form-control input-md">
+          <span class="help-block">Cidade que nasceu</span>  
+          </div>
+        </div>
+        
+        <!-- Multiple Radios -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="sexo">Sexo</label>
+          <div class="col-md-4">
+          <div class="radio">
+            <label for="sexo-0">
+              <input type="radio" name="sexo" id="sexo-0" value="1" checked="checked">
+              Masculino
+            </label>
+            </div>
+          <div class="radio">
+            <label for="sexo-1">
+              <input type="radio" name="sexo" id="sexo-1" value="2">
+              Feminino
+            </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="nivelEscolar">Nível Escolar</label>
+          <div class="col-md-4">
+            <select id="nivelEscolar" name="nivelEscolar" class="form-control">
+              <option value="1">Fundamental Incompleto</option>
+              <option value="2">Fundamental Completo</option>
+              <option value="">Ensino Médio Incompleto</option>
+              <option value="">Ensino Médio Completo</option>
+              <option value="">Graduação Incompleto</option>
+              <option value="">Graduação Completo</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Multiple Checkboxes -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="checkboxes">Hobbies</label>
+          <div class="col-md-4">
+          <div class="checkbox">
+            <label for="checkboxes-0">
+              <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+              Pesca
+            </label>
+            </div>
+          <div class="checkbox">
+            <label for="checkboxes-1">
+              <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+              Bicicleta
+            </label>
+            </div>
+          <div class="checkbox">
+            <label for="checkboxes-2">
+              <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">
+              Academia
+            </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Button (Double) -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="button1id"></label>
+          <div class="col-md-8">
+            <button id="button1id" name="button1id" class="btn btn-success">Salvar</button>
+            <button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        
+</body>
+</html>
